@@ -1,0 +1,225 @@
+
+/* .fire {
+    --color: #E75C35;
+    --header-gradient: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+    --border-gradient: linear-gradient(180.57deg, #E6901E -45.23%, #E75C35 158.14%);
+  } */
+
+  .pokeInfo_container{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;     
+  }
+
+  .info_card{
+    width: min(800px,100%);
+    margin-top: 240px;
+    box-shadow: 0 2px 5px #0c0c0c34;
+    border-radius: 10px;
+  }
+  
+.info_card_header{
+    width: 100%;
+    height: 120px;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    background: var(--header-gradient);
+}
+
+.img_pokemon{
+    width: min(250px,60%);
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.info_card_body{
+    padding: 30px 60px 60px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+}
+
+.info_card_section_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info_card_id{
+    font-size: 32px;
+    border: 1px solid #0C0C0C44;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+.info_card_hr{
+    border: none;
+    border-top: 1px solid #0C0C0C66;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.info_card_name{
+    font-size: 32px;
+    top: 87px;
+    text-transform: capitalize;
+    background-color: #fff;
+    padding: 0 10px;
+    position: absolute;
+}
+
+.info_card_list_1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.height_weight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.span_height_weight {
+    font-size: 14px;
+    color: #0c0c0c99;
+    font-weight: 300;
+}
+
+.info_card_list_2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.type_habilities {
+    text-align: center;
+}
+
+.span_type_habilities {
+    display: block;
+    margin-bottom: 10px;
+    color: #0c0c0c99;
+}
+
+.type_habilities_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pokeInfo_type{
+    background: var(--header-gradient);
+    text-transform: capitalize;
+    padding: 5px 20px;
+    font-weight: 600;
+    border: 1px solid transparent;
+    color: rgba(0, 0, 0, 0.692);
+}
+
+.info_skill{
+    border: 1px solid #0C0C0C44;
+    text-transform: capitalize;
+    padding: 5px 20px;
+    font-weight: 600;
+}
+
+.info_card_section_2{
+    position: relative;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.separator_stat{
+    margin-bottom: 25px;
+    border-top: 1px solid rgba(56, 56, 56, 0.4);
+    
+}
+
+.title_section_stat{
+    position: absolute;
+    top: 0;
+    left: -1px;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+.stat_container_info{
+    margin-bottom: 15px;
+}
+
+.stat_header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.stat_name{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.progress_bar_container{
+    width: 100%;
+    height: 30px;
+    background-color: #efefef;
+}
+
+.progress_stat_2{
+    display: block;
+    height: 30px;
+    background: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
+}
+
+.movement_card{
+    width: min(800px,100%);
+    background-color: #fff;
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #0c0c0c34;
+    position: relative;
+}
+
+.movement_hr{
+    margin-top: 17px;
+    margin-bottom: 40px;
+}
+
+.movement_title{
+    position: absolute;
+    padding: 5px 10px;
+    background-color: #fff;
+    font-size: 32px;
+    top: 32px;
+    left: 60px;
+}
+
+.movement_tag_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 15px 20px;
+}
+
+.movement_tag{
+    width: 100%;
+    border-radius: 35px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
