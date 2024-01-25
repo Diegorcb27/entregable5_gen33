@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import useFetch from "../Hook/useFetch";
 import { useParams } from "react-router-dom";
 import "./stylesMain/PokemonPage.css"
+import pokedex from "../assets/img pokedex.png"
 
 const PokemonPage = () => {
   const { id } = useParams();
@@ -24,7 +25,7 @@ const PokemonPage = () => {
           <div className="circle_2"></div>
           <img
             className="img_pokedex_1"
-            src="/src/assets/img pokedex.png"
+            src={pokedex}
             alt=""
           />
         </header>

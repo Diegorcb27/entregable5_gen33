@@ -4,6 +4,7 @@ import useFetch from "../Hook/useFetch";
 import PokeCard from "../Components/PokedexPage/PokeCard";
 import SelectType from "../Components/PokedexPage/SelectType";
 import "./stylesMain/PokedexPage.css";
+import pokedex from "../assets/img pokedex.png"
 
 const PokedexPage = () => {
   const trainerName = useSelector((states) => states.trainer);
@@ -42,7 +43,7 @@ const PokedexPage = () => {
         <header className="rectangle_rojo">
           <div className="rectangle_negro"></div>
           <div className="circle_2"></div>
-          <img className="img_pokedex_1" src="/src/assets/img pokedex.png" alt="" />
+          <img className="img_pokedex_1" src={pokedex} alt="" />
         </header>
         <aside className="aside_container">
         <h2 className="title_welcome">

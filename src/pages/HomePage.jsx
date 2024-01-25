@@ -3,6 +3,7 @@ import { setTrainerG } from '../store/states/trainer.state'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import "./stylesMain/HomePage.css"
+import pokedex from "../assets/img pokedex.png"
 
 const HomePage = () => {
 
@@ -22,7 +23,7 @@ const handleSubmit=(e)=>{
   return (
     <article className='container_home'>
       <header>
-      <img className="img-pokedex-logo" src="/src/assets/img pokedex.png" alt="image pokedex letters"/>
+      <img className="img-pokedex-logo" src={pokedex} alt="image pokedex letters"/>
           <h2 className='title_home'>Hi trainer!</h2>
           <p className='welcome_trainer'>To start this app, give me your trainer name</p>
       </header>
